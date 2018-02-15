@@ -38,7 +38,15 @@ class Connection
     public function getError()
     {
         if (isset($this->db)) {
-            return $this->db->connect_error;
+            if ($this->db->error) {
+                $error = $this->db->error . '<br>';
+            } elseif ($this->db->connect_error) {
+                $error = $this->db->connect_error . '<br>';
+            } else {
+                $error = 'Have you tried turning OFF and ON again?' . '<br>';
+            }
+            
+            return $error;
         }
     
         return false;
