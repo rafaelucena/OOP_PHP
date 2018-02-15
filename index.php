@@ -31,7 +31,7 @@ $result = $data->run($query);
                     echo '<td>'.$res['birthday'].'</td>';
                     echo '<td>'.$res['email'].'</td>';
                     echo '<td>'.
-                            '<a href="edit.php?id=$res[id]">Edit</a> | <a href="delete.php?id=$res[id]" onClick="return confirm(\'Are you sure you want to delete?\')">Delete</a>'.
+                            "<a href='edit.php?id=$res[id]'>Edit</a> | <a href='delete.php?id=$res[id]' onClick='return confirm(\"Are you sure you want to delete?\")'>Delete</a>".
                         '</td>';
                 }
             ?>
