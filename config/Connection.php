@@ -7,7 +7,7 @@ class Connection
 {
     private $_host = 'localhost';
     private $_username = 'root';
-    private $_password = 'wika1983';
+    private $_password = 'admin';
     private $_database = 'test';
     
     /**
